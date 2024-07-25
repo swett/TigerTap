@@ -179,6 +179,7 @@ extension GameScreenVC {
     func updateBankLabel() {
         print("call bank")
         viewModel.settingViewModel?.updatePlayer = AppData.shared.player
+        bankLabel.text = "\(viewModel.settingViewModel!.updatePlayer.formattedCoins)"
         
     }
     
