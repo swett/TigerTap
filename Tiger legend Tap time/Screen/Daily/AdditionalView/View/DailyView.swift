@@ -195,13 +195,13 @@ extension DailyView {
                     }
                     
                 }
-            BottomSheetView(isOpen: $showingNameChange, maxHeight: 393) {
+            BottomSheetView(isOpen: $showingNameChange, maxHeight: 500) {
                 ZStack {
                     LinearGradient(colors: [Color(hex: "#141925"), Color(hex: "#060910")], startPoint: .leading, endPoint: .trailing)
                         .edgesIgnoringSafeArea(.all)
                     ChangeNameView(isShowing: $showingNameChange)
                         .environmentObject(viewModel.settingViewModel!)
-                        .padding(.bottom, 150)
+                        .padding(.bottom, 350)
                     
                 }
                 
